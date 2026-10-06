@@ -1,0 +1,46 @@
+name: FG_Economy
+version: 2.0
+main: com.example.economy.EconomyPlugin
+api-version: 1.20
+description: 经济系统插件 - 矿物出售、商店购买、玩家市场、快捷出售/上架、转账
+commands:
+  money:
+    description: 查看余额
+    usage: /money
+    aliases: [balance, bal, 钱]
+  sell:
+    description: 出售手持矿物（1-64，超过手持数量则卖全部）
+    usage: /sell [数量]
+    aliases: [卖, 出售]
+  sellall:
+    description: 出售背包中所有可出售物品
+    usage: /sellall
+    aliases: [全部出售, 清空出售, 卖全部]
+  mall:
+    description: 快捷出售 - 按物品ID出售背包物品
+    usage: /mall <物品ID|yes> [数量]
+    aliases: [快捷出售, 批量出售]
+  shop:
+    description: 打开商店
+    usage: /shop
+    aliases: [商店, 买]
+  pay:
+    description: 转账给玩家
+    usage: /pay <玩家> <金额>
+    aliases: [转账, 给]
+  market:
+    description: 玩家市场 - 浏览/上架/管理物品
+    usage: /market [价格|my]
+    aliases: [市场, 上架, 玩家市场]
+  menu:
+    description: 获取经济菜单指南针（右键打开经济系统）
+    usage: /menu
+    aliases: [菜单, 指南针, 经济菜单]
+  ecoadmin:
+    description: 经济管理（OP）
+    usage: /ecoadmin <set|add|remove> <玩家> <金额>
+    permission: economy.admin
+permissions:
+  economy.admin:
+    description: 经济管理权限
+    default: op
