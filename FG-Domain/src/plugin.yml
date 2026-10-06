@@ -1,0 +1,12 @@
+name: FG-Domain
+version: 1.0
+main: com.fg.domain.DomainPlugin
+api-version: 1.20
+description: 游戏内DDNS域名服务 - /https申请子域名，/a绑定IP
+commands:
+  https:
+    description: 申请子域名（不填参数随机6位）
+    usage: /https [子域名2-10位]
+  a:
+    description: 绑定公网IP到你的子域名
+    usage: /a <公网IP>
