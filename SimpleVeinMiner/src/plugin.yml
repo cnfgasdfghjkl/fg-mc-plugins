@@ -1,0 +1,10 @@
+name: SimpleVeinMiner
+version: 1.0
+main: com.example.veinminer.VeinMinerPlugin
+api-version: 1.20
+description: Vein mining plugin - 26-direction connectivity, drops to inventory
+commands:
+  veinminer:
+    description: Toggle vein mining
+    usage: /veinminer
+    aliases: [vm]
