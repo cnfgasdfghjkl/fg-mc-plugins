@@ -1,0 +1,9 @@
+name: FG-AIHelper
+version: 1.0
+main: com.fg.aihelper.AIHelperPlugin
+api-version: 1.20
+description: AI聊天助手 - 关键词匹配触发指令，默认开启，/no关闭，3秒冷却
+commands:
+  no:
+    description: 关闭/开启AI助手
+    usage: /no
